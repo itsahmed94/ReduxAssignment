@@ -4,9 +4,9 @@ import { View } from "react-native";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 //Get Reducers
-import reducers from "../src/Reducer";
+import reducers from "./Reducer/Index";
 //Get the Header Component
-import { Header } from "./components/common";
+import { Header } from "./common";
 // import LibraryList from "./components/LibraryList";
 
 const App = () => {
