@@ -6,16 +6,16 @@ import { createStore } from "redux";
 //Get Reducers
 import reducers from "./Reducer/Index";
 //Get the Header Component
-import { Header } from "./common";
-// import LibraryList from "./components/LibraryList";
+import { Header } from "./components/common";
+import LibraryList from "./components/LibraryList";
 
 const App = () => {
 return (
 // Provider can only have one child component
 <Provider store={createStore(reducers)}>
-<View>
-<Header headerText="Redux Demo -- Tech Stack" />
-{/* <LibraryList /> */}
+<View style={{ flex: 1 }}>
+<Header headerText="Tech Stack" />
+<LibraryList />
 </View>
 </Provider>
 );
